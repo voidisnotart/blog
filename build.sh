@@ -1,1 +1,1 @@
-npx @11ty/eleventy --input=src --output=dist
+npx @11ty/eleventy --input=src --output=docs
