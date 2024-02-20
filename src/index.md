@@ -10,7 +10,7 @@ description: Intentionally blank
     <a href="{{post.data.page.url}}" class="post"><h2>{{post.data.title}}</h2></a>
     <time datetime="{{ post.data.date }}">{{ page.date | postDate }}</time>
     <br />
-    <img src="{{post.data.image}}" width="300">
+    <img src="{{post.data.image}}" width="100%">
     <p>{{ post.data.excerpt }}</p>
 </div>
 {% endfor %}
