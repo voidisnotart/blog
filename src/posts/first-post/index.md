@@ -2,7 +2,7 @@
 layout: post-layout.html
 tags: posts
 title: First post
-image: /posts/20-feb-2024/image.png
+image: /posts/first-post/image.png
 date: 2024-02-20
 excerpt: first post ever
 ---
