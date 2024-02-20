@@ -6,7 +6,7 @@ description: Intentionally blank
 
 
 {% for post in collections.posts %}
-<div>
+<div style="margin-bottom: 2rem;">
     <a href="{{post.data.page.url}}" class="post"><h2>{{post.data.title}}</h2></a>
     <img src="{{post.data.image}}" width="300">
     <p>{{ post.data.excerpt }}</p>
