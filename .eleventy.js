@@ -8,4 +8,8 @@ module.exports = function(eleventyConfig) {
         const str = util.inspect(value);
         return `<div style="white-space: pre-wrap;">${unescape(str)}</div>;`
     });
+
+    eleventyConfig.addFilter("postDate", (date) => {
+        return new Date(date).toLocaleDateString('en-us', { weekday:"short", year:"numeric", month:"short", day:"numeric"}) 
+    });
   };
