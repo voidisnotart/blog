@@ -12,6 +12,10 @@ body {
     padding: 1rem;
 }
 
+main {
+    margin-top: 1rem;
+}
+
 a {
     color: #e2ffe2;
 }
