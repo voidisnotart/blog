@@ -1,3 +1,4 @@
 {
-    "layout": "post-layout.html"
+    "layout": "post-layout.html",
+    "tags": "posts"
 }
