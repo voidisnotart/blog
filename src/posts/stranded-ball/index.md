@@ -1,8 +1,8 @@
 ---
 layout: post-layout.html
 tags: posts
-title: Strandball
-image: /posts/strandball/image.jpeg
+title: Stranded ball
+image: /posts/stranded-ball/image.jpeg
 date: 2024-02-21
 excerpt: as lost as i am
 ---
