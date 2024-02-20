@@ -3,7 +3,8 @@ const util = require('util');
 
 module.exports = function(eleventyConfig) {    
     eleventyConfig.addPassthroughCopy("**/*.jpg");
-    eleventyConfig.addPassthroughCopy("**/*.png");
+    eleventyConfig.addPassthroughCopy("**/*.jpeg");
+  eleventyConfig.addPassthroughCopy("**/*.png");
     eleventyConfig.addPassthroughCopy({"./public": "./"});
       
 
