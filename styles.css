@@ -13,9 +13,9 @@ body {
 }
 
 a {
-    color: green;
+    color: #e2ffe2;
 }
 
 a:visited {
-    color: darkgreen;
+    color: #a5bea5;
 }
