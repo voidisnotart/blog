@@ -7,6 +7,6 @@ date: 2024-02-20
 excerpt: first post ever
 ---
 
-This photo was taken on my computer. 
-<br/>
+this photo was taken on my computer. 
+
 This is refreshing.
