@@ -15,10 +15,6 @@ body {
     margin-top: 1rem;
 }
 
-img {
-    max-width: 100%;
-}
-
 main {
     margin-top: 2rem;
 }
@@ -39,6 +35,11 @@ time {
 .imageContainer {
     width: 100%;
     display: flex;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 img[data-src] {
