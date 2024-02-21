@@ -6,7 +6,7 @@ description: Intentionally blank
 
 
 {% for post in collections.posts reversed %}
-<div style="margin-bottom: 2rem;">
+<div style="margin-bottom: 2.5rem;">
     <a href="{{post.data.page.url}}" class="post"><h2>{{post.data.title}}</h2></a>
     <time datetime="{{ post.data.date }}">{{ post.data.date | postDate }}</time>
     <br />
