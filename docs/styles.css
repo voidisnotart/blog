@@ -55,7 +55,7 @@ img {
     height: auto;
 }
 
-img[data-src] {
+img[loading="lazy"] {
     opacity: 0;
     transition: opacity 0.3s;
 }
