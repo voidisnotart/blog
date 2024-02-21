@@ -63,3 +63,7 @@ img[data-src] {
 img[data-loaded="true"] {
     opacity: 1;
 }
+
+h1 {
+    font-size: 3rem;
+}

@@ -8,7 +8,6 @@ image:
 date: 2024-02-20
 excerpt: first post ever
 ---
-
 this photo was taken on my computer. 
 
 This is refreshing.
