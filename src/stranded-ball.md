@@ -3,8 +3,8 @@ layout: post-layout.html
 tags: posts
 title: Stranded ball
 image:
-    src: ./src/posts/stranded-ball/image.jpeg
-    alt: a ball
+    src: ./src/img/stranded-ball.jpeg
+    alt: a floating ball
 date: 2024-02-21
 excerpt: as lost as i am
 ---

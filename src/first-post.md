@@ -3,7 +3,7 @@ layout: post-layout.html
 tags: posts
 title: First post
 image: 
-    src: ./src/posts/first-post/image.png
+    src: ./src/img/first-post.png
     alt: void
 date: 2024-02-20
 excerpt: first post ever
