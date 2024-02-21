@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "build": "@11ty/eleventy --input=./src --output=./docs"
+    "build": "eleventy --input=./src --output=./docs"
   },
   "author": "",
   "license": "ISC",

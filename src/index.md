@@ -10,8 +10,9 @@ description: Intentionally blank
     <a href="{{post.data.page.url}}" class="post"><h2>{{post.data.title}}</h2></a>
     <time datetime="{{ post.data.date }}">{{ post.data.date | postDate }}</time>
     <br />
+    
     <div class="imageContainer">
-        {% image post.data.image.url post.data.image.alt %}
+        {% image post.data.image.src post.data.image.alt "(min-width: 52em) 800px, 100vw"%}
     </div>
     <p>{{ post.data.excerpt }}</p>
 </div>

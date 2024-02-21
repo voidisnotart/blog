@@ -2,7 +2,9 @@
 layout: post-layout.html
 tags: posts
 title: Stranded ball
-image: /posts/stranded-ball/image.jpeg
+image: 
+    src: ./src/posts/stranded-ball/image.jpeg
+    alt: a ball
 date: 2024-02-21
 excerpt: as lost as i am
 ---

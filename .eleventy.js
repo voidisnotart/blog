@@ -1,15 +1,13 @@
-
 const util = require('util');
+const Image = require('@11ty/eleventy-img')
 
-module.exports = function(eleventyConfig) {    
-    eleventyConfig.addPassthroughCopy("**/*.jpg");
-    eleventyConfig.addPassthroughCopy("**/*.jpeg");
-  eleventyConfig.addPassthroughCopy("**/*.png");
+module.exports = function(eleventyConfig) {        
     eleventyConfig.addPassthroughCopy({"./public": "./"});
       
 
     eleventyConfig.addFilter('console', function(value) {
         const str = util.inspect(value);
+        console.log(str)
         return `<div style="white-space: pre-wrap;">${str}</div>;`
     });
 
@@ -17,10 +15,10 @@ module.exports = function(eleventyConfig) {
         return new Date(date).toLocaleDateString('en-us', { weekday:"short", year:"numeric", month:"short", day:"numeric"}) 
     });
 
-    eleventyConfig.addShortcode("image", async function(src, alt, sizes) {
+    eleventyConfig.addShortcode("image", async function(src, alt, sizes) {        
 		let metadata = await Image(src, {
 			widths: [400, 800, 1600],
-			formats: ["avif", "jpeg", "png"]
+			formats: ["jpeg", "webp"]
 		});
 
 		let imageAttributes = {
