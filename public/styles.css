@@ -4,6 +4,7 @@ html, body {
     color: lightgreen;
     background: rgb(16, 26, 12);
     font-size: 1rem;
+    user-select: none;
 }
 
 body {
@@ -33,4 +34,18 @@ a:visited {
 time {
     font-size: 0.875rem;
     display: block; 
+}
+
+.imageContainer {
+    width: 100%;
+    display: flex;
+}
+
+img[data-src] {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+img[data-loaded="true"] {
+    opacity: 1;
 }

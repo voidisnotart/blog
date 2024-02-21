@@ -11,9 +11,11 @@
         <a href="/">Go back</a>
         <main>
             <h1>{{title}}</h1>
-            <time datetime="{{ post.data.date }}">{{ page.date | postDate }}</time>
+            <time datetime="{{ post.data.date }}">{{ post.data.date }}</time>
             <br />
-            <img src="{{image}}" width="100%">
+            <div className="imageContainer">
+                {% image post.data.image.url post.data.image.alt %}
+            </div>
             <br />
             {{ content }}
         </main>
