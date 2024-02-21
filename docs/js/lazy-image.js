@@ -20,6 +20,4 @@ function main() {
     })
 }
 
-main()
 window.addEventListener('DOMContentLoaded', main)
-window.addEventListener('load', main)

@@ -2,7 +2,7 @@ const util = require('util');
 const Image = require('@11ty/eleventy-img')
 
 module.exports = function(eleventyConfig) {        
-    eleventyConfig.addPassthroughCopy({"./public": "./"});
+    eleventyConfig.addPassthroughCopy({"./src/public": "./"});
     eleventyConfig.addPassthroughCopy({"./src/js": "./js"});
     eleventyConfig.addPassthroughCopy({"./src/css": "./css"});
       
