@@ -37,9 +37,17 @@ time {
     display: block; 
 }
 
-.imageContainer {
+picture {
     width: 100%;
     display: flex;
+    position: relative;
+
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        inset: 0;
+    }
 }
 
 img {

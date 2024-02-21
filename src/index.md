@@ -11,9 +11,8 @@ description: Intentionally blank
     <time datetime="{{ post.data.date }}">{{ post.data.date | postDate }}</time>
     <br />
     
-    <div class="imageContainer">
-        {% image post.data.image.src post.data.image.alt "(min-width: 52em) 800px, 100vw"%}
-    </div>
+    
+    {% image post.data.image.src post.data.image.alt "(min-width: 52em) 800px, 100vw"%}
     <p>{{ post.data.excerpt }}</p>
 </div>
 {% endfor %}
