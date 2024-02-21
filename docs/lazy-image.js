@@ -1,4 +1,4 @@
-var images = document.querySelectorAll('img[data-src]')
+var images = document.querySelectorAll('img[loading="lazy]')
 
 // const observer = new IntersectionObserver((entries) => {
 //     entries.forEach(function (entry) {
