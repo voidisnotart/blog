@@ -1,24 +1,17 @@
-var images = document.querySelectorAll('img[loading="lazy]')
+var images = document.querySelectorAll('img[loading="lazy"]')
 
-// const observer = new IntersectionObserver((entries) => {
-//     entries.forEach(function (entry) {
-//         if (!entry.isIntersecting) return 
-
-//         entry.target.src = entry.target.getAttribute('data-src')
-//         observer.unobserve(image)
-//     })
-// }, {
-//     rootMargin: '0px 0px 512px 0px',
-// })
-
-// images.forEach(function (image) {
-//     observer.observe(image)
-// })
+function onLoad(e) {
+    const image = e.target
+    if (image.complete) {
+        image.setAttribute('data-loaded', true)
+        image.removeEventListener('load', onLoad)
+    }
+}
 
 images.forEach(function (image) {
-    image.addEventListener('load', function onLoad() {
-        if (image.complete) {
-            image.setAttribute('data-loaded', true)
-        }
-    })
+    if (image.complete) {
+        image.setAttribute('data-loaded', true)
+    }
+    
+    image.addEventListener('load', onLoad)
 })
