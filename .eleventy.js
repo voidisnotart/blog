@@ -15,6 +15,10 @@ module.exports = function(eleventyConfig) {
         return new Date(date).toLocaleDateString('en-us', { weekday:"short", year:"numeric", month:"short", day:"numeric"}) 
     });
 
+    eleventyConfig.addFilter("datetime", (date) => {
+        return new Date(date).toISOString()
+    });
+    
     eleventyConfig.addShortcode("image", async function(src, alt, sizes) {        
 		let metadata = await Image(src, {
 			widths: [358, 716, 1024, 2048],
